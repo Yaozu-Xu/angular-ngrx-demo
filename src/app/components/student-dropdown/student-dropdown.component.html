@@ -1,0 +1,5 @@
+<select [(ngModel)]="currentClassroom" (ngModelChange)="onDropdownChange()">
+  <option *ngFor="let classroom of classroomList" [value]="classroom">
+    {{ classroom }}
+  </option>
+</select>
