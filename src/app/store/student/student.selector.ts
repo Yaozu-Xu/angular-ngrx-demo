@@ -11,6 +11,11 @@ export const studentInfoByClassSelector = createSelector(
     state.studentInfo.filter((_) => _.class === state.classroomSelected)
 );
 
+export const studentInfoApiError = createSelector(
+  studentFeatureKeySelector,
+  (state: StudentState) => state.error
+);
+
 export const currentClassroom = createSelector(
   studentFeatureKeySelector,
   (state: StudentState) => state.classroomSelected

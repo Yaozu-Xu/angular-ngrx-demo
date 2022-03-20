@@ -6,3 +6,8 @@ export type StudentInfo = {
   English: number;
   Chemical: number;
 };
+
+export type HttpErrorResponse = {
+  msg: string,
+  statusCode: number
+}
